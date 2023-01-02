@@ -1,0 +1,34 @@
+.profile {          /*중괄호 사이의 코드를 .profile이라는 이름으로 축약, class*/
+width: 100px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.name {
+  font-size: 16px;
+  color: orange;
+  text-align: center;
+}
+
+.job {
+  text-align: center;
+}
+
+strong {
+  color: red;
+}
+
+.box {
+  width: 200px;
+  background-color: cadetblue;
+  margin: 10px;
+  padding: 40px;
+  border: 4px solid black;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  color: white;
+  box-shadow: 5px 5px black;
+}
