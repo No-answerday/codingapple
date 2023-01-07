@@ -193,5 +193,31 @@ CI(Continuous Integration) : 지속적 통합, 빌드/테스트 자동화 과정
 CD(Continuous Deployment) : 지속적 배포, 배포 자동화 과정
 
 
-# git stash
-f
+# git stash로 코드 잠깐 보관하기
+
+## 코드 보관하기
+$git stash
+최근 commit과의 차이점을 전부 보관
+staging 안해놓은 새로운 파일은 stash 안될 수도 있음
+
+## 일부 코드만 보관하기
+git stash -p
+
+## 보관된 코드 목록 조회
+$git stash list
+
+## 메모와 함께 코드 보관하기
+$git stash save '메모'
+
+## 코드 불러오기
+$git stash pop
+가장 최근 것 부터 불러옴
+
+## stash 삭제
+$git stash drop 번호 : stash 1개 삭제
+$git stash clear : stash 전부 삭제
+
+## 하는 이유?
+주석처리는 commit에 남기 때문에
+commit에 남지 않게 코드를 보관하고 싶을 때 사용
+브랜치를 따로 만들어서 코드를 보관해도 되긴함
