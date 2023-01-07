@@ -113,3 +113,21 @@ $git reset --soft 커밋아이디
 
 # 변동사항 지우지 말고 unstage해놓은 리셋
 $ git reset --mixed 커밋아이디
+
+
+# Github
+
+## repository (저장소)
+git이 파일 기록해두는 장소
+
+## 온라인 repository (원격 저장소)만드는 이유
+자료 손실 방지
+협업가능
+
+## 원격저장소 업로드
+$git push -u 원격저장소주소 올릴로컬브랜치명
+-u : 주소를 기억하라
+
+## 원격저장소 변수로 사용하여 업로드
+$git remote add 변수명 주소
+$git remote add origin 주소
