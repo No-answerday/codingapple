@@ -124,6 +124,9 @@ git이 파일 기록해두는 장소
 자료 손실 방지
 협업가능
 
+## 기본 브랜치 이름 main으로 변경
+$git branch -M main
+
 ## 원격저장소 업로드
 $git push -u 원격저장소주소 올릴로컬브랜치명
 -u : 주소를 기억하라
@@ -131,3 +134,64 @@ $git push -u 원격저장소주소 올릴로컬브랜치명
 ## 원격저장소 변수로 사용하여 업로드
 $git remote add 변수명 주소
 $git remote add origin 주소
+
+## 원격저장소 내려받기
+$git clone 원격저장소주소
+
+## 저장소에 올리지 않는 파일 설정
+.gitignore 파일을 만들어 올리지 않을 파일 명시가능
+git add . 해도 스테이징되지 않음
+ex) node_modules
+
+## 원격저장소 -> 로컬저장소
+$git pull 원격저장소주소 브랜치명
+$git pull origin 브랜치명
+
+##원격저장소 최신내용이 로컬저장소에 있을 때만 git push 가능
+git pull : git fetch + git merge
+git fetch : 원격저장소 신규 commit 가져오기
+git merge : 그걸 merge
+
+## git pull 이후에 git push 하자
+
+
+# 브랜치로 협업하기 (pull request)
+
+## 브랜치 만들기
+github 사이트에서 직접 생성
+로컬 저장소에서 생성하고 git push
+$git push 원격저장소주소 로컬브랜치명 
+
+## pull request
+github.com 에서 브랜치를 merge하는 방법
+코드리뷰 댓글 가능
+merge 할 때 방법 (3-way, squash, rebase) 선택가능
+
+# git flow / trunk-basesd 브랜치 전략
+
+## GitFlow
+<img src="gitflow.png">
+main
+develop : 개발용
+feature : develop에 기능추가용
+release : develop 브랜치를 main 브랜치에 합치기 전 최종테스트용
+hotfix : main 브랜치 버그해결용
+
+main을 두고 여러 브랜치를 만들어서 기능추가, 테스트를 하고 마지막으로 main 브랜치에 합쳐서 배포
+안정적으로 버전별 배포가능
+
+## Trunk-based
+<img src="trunk-based.png">
+main 브랜치에서 새로운 브랜치를 만들어 기능추가, 버그픽스 등 함
+기능이 완성되면 main 브랜치에 합침
+main 브랜치의 코드를 필요할 때 마다 유저에게 배포
+
+테스트를 많이, 자주해야됨
+안정화된 프로젝트들이 많이 사용
+CI/CD에서 자주 사용
+CI(Continuous Integration) : 지속적 통합, 빌드/테스트 자동화 과정
+CD(Continuous Deployment) : 지속적 배포, 배포 자동화 과정
+
+
+# git stash
+f
