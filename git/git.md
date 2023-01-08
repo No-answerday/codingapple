@@ -171,11 +171,11 @@ merge 할 때 방법 (3-way, squash, rebase) 선택가능
 
 ## GitFlow
 <img src="gitflow.png">
-main    
-develop : 개발용    
-feature : develop에 기능추가용    
-release : develop 브랜치를 main 브랜치에 합치기 전 최종테스트용    
-hotfix : main 브랜치 버그해결용      
+main  <br>
+develop : 개발용  <br>  
+feature : develop에 기능추가용  <br>
+release : develop 브랜치를 main 브랜치에 합치기 전 최종테스트용 <br>
+hotfix : main 브랜치 버그해결용 <br>
   
 main을 두고 여러 브랜치를 만들어서 기능추가, 테스트를 하고 마지막으로 main 브랜치에 합쳐서 배포  
 안정적으로 버전별 배포가능
