@@ -86,12 +86,18 @@ font-size, font-family, color ...
 
 # 레이아웃 만들기 : 호환성 좋은 float
 
-감싸는 wrapper, container 박스 만들면 유용함
+##  warpper / contain box 
+감싸는 wrapper, container 박스 만들면 유용함   
 모든 <div>는 display: block 가짐 (가로행 전부 차지)
 
-float: left -> 요소를 붕 띄워서 왼쪽 정렬
+##  float: left 
+요소를 붕 띄워서 왼쪽 정렬  
 
-clear: both -> float 다음에 오는 요소에게 주면 float으로 발생하는 이상한 현상 해결가능
-float: none -> 버그예방차원에서 좋음
+##  clear: both 
+float 다음에 오는 요소에게 주면 float으로 발생하는 이상한 현상 해결가능
 
-크기 % : 내 부모 태그(나를 감싸고 있는)의 ~에 % 만큼 차지
+##  float: none 
+버그예방차원에서 좋음
+
+##  크기 % 
+내 부모 태그(나를 감싸고 있는)의 ~에 % 만큼 차지
