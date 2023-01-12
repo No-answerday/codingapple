@@ -101,3 +101,27 @@ float 다음에 오는 요소에게 주면 float으로 발생하는 이상한 �
 
 ##  크기 % 
 내 부모 태그(나를 감싸고 있는)의 ~에 % 만큼 차지
+<br>
+<br>
+
+# 레이아웃 만들기 : inline-block
+
+## inline-block
+display: block (한 행을 전부 차지)  
+display: inline-block (내 크기만큼 차지)  
+inline-block 사용하려면 박스사이에 공백도 없어야 됨
+
+## inline-block 공백제거 방법
+박스사이에 주석기호 넣기 <!---->  
+부모태그에 font-size: 0px 넣기  
+자식태그에 font-size 지정해주면 글씨 보임  
+(참고) 부모 태그로 inherit 되는 스타일은 중요도 가장 낮음
+
+## inline-block 박스 안에 글
+inline-block 박스에 <p></p> 를 사용하여 글을 쓰면 이상해짐  
+baseline(글씨쓸 때 기준선)이 옆에 존재하면 inline-block 요소들이 baseline 위에 오려고 함
+
+## 요약
+inline-block 은 자기 크기만큼 자리차지  
+공백제거 필요
+주변에 글이 있으면 위치 오류남
