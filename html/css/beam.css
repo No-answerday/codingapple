@@ -1,0 +1,41 @@
+.beamcontainer  {
+  width: 1080px;
+  height: 960px;
+  background-color: red;
+}
+
+.contentbox {
+  width: 80%;
+  height: 400px;
+  background-color: skyblue;
+}
+
+.idbox{
+
+}
+
+.userimg  {
+
+}
+
+.username {
+
+}
+
+.timebox  {
+
+}
+
+.headbox{
+
+}
+
+.textbox{
+
+}
+
+.imgbox{
+  width: 20%;
+  height: 400px;
+  background-color: green;
+}
