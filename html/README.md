@@ -129,3 +129,9 @@ inline-block 은 자기 크기만큼 자리차지
 ## 진도가 안나간다
 열심히 하자
 layout css 적용 문제 해결하기
+
+## 230115
+hard work so too late
+arrived home at midnight
+no study
+sad...
