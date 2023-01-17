@@ -8,6 +8,7 @@
   width: 80%;
   height: 400px;
   background-color: skyblue;
+  display: inline;
 }
 
 .idbox{
