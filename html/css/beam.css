@@ -2,6 +2,9 @@
   width: 1080px;
   height: 960px;
   background-color: gray;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contentbox {
