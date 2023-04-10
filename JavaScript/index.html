@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  
+  <h1 id="hello">안녕하세요</h1>
+  <h1 id="hi">JS 초보에요</h1>
+
+  <div class="alert-box" id="alert">
+    <p class="alert-message">알림창임</p>
+    <button onclick= "toggleAlert('none')">
+      닫기
+    </button>
+  </div>
+  <button onclick= "toggleAlert('block')">
+    버튼    
+  </button>
+
+  <button onclick= "toggleAlert('block', '아이디를 입력하세요')">
+    버튼1
+  </button>
+  <button onclick= "toggleAlert('block', '비밀번호를 입력하세요')">
+    버튼2
+  </button>
+
+  <script>
+    document.getElementById('hello').innerHTML = '안녕';
+    document.getElementById('hello').style.fontSize = '16px'; 
+    document.getElementById('hello').style.color = 'green'; 
+    document.getElementById('hi').innerHTML = 'JS 고수에요';
+    
+    function toggleAlert(a, message) {
+      document.getElementById('alert').style.display = a; 
+      document.getElementById('alert-message').innerHTML = message;
+    }
+    
+    // function openAlert(a) {
+    //   document.getElementById('alert').style.display = a;
+    // }
+    // function closeAlert() {
+    //   document.getElementById('alert').style.display = 'none';
+    // }
+
+    // function plus(a, b) {
+    //   a + b
+    // }
+
+  </script>
+
+</body>
+</html>
