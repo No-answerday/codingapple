@@ -121,3 +121,13 @@ document.getElementById().value; : 유저가 <input>에 입력한 값
 
 ## alert
 알림창
+
+## 폼전송 막기
+e.preventDefault();
+
+
+# 230413
+
+## else if
+조건식을 연달아 쓰고 싶으면 사용 (사용 횟수 상관 X)
+앞의 조건식이 참이면 else문 실행 X
