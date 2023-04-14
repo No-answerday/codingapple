@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    function threeSixNineGame (num) {
+            
+      if(num%9 == 0){
+        console.log('박수*2');
+      }else if(num%3 == 0 && num%9 != 0){
+        console.log('박수');
+      }
+      else {
+        console.log('통과');
+      }
+    }
+
+    for (let i = 1; i <= 20; i++) {
+      console.log(i);
+      threeSixNineGame(i);
+    }
+
+    function passJudge(a, b){
+      if ( a < 40 || b < 40 ) {
+        return '불합격';
+      } else if (a + b >= 120) {
+        return '합격';
+      } else {
+        return '불합격';
+      }
+    }
+
+    const score1 = 100;
+    const score2 = 30;
+
+    console.log(`점수: ${score1}, ${score2} / 합격 여부: ${passJudge(score1, score2)}`);
+
+  </script>
+
+</body>
+</html>

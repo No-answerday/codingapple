@@ -131,3 +131,26 @@ e.preventDefault();
 ## else if
 조건식을 연달아 쓰고 싶으면 사용 (사용 횟수 상관 X)
 앞의 조건식이 참이면 else문 실행 X
+
+
+# 230414
+
+## addEventListener
+addEventListener('input')  : <input>에 입력한 값이 바뀔 때 발생
+addEventListener('change') : <input>에 입력한 값이 바뀌고 포커스를 잃을 때 발생
+
+## if & boolean
+if문 안에는 true / false (boolean) 넣어야 잘 됨
+
+## 비교연산자
+!= : 다름
+== : 같음, 느슨한 비교
+=== : 같음, 엄격한 비교 (type까지 같아야 됨)
+!== : 다름, 엄격한 비교 (type까지 같아야 됨)
+
+&& : 그리고 (and)
+|| : 이거나 (or)
+
+## true / false 로 인식자는 자료
+truthy 자료  : 0 제외한 숫자, '문자', [], {}
+falsy 자료 : 0, '', null, undefined, NaN
