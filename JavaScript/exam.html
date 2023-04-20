@@ -7,6 +7,10 @@
   <title>Document</title>
 </head>
 <body>
+
+  <p>태조 이성계가 태어난 년도는?</p>
+  <input type="text" id="answer">
+  <button id="send-answer">제출</button>
   
   <script>
     function threeSixNineGame (num) {
@@ -41,8 +45,38 @@
 
     console.log(`점수: ${score1}, ${score2} / 합격 여부: ${passJudge(score1, score2)}`);
 
-    var 
+    const homeTown = '대전';
+    var age = 30
 
+    var 예금액 = 60000;
+    var 미래예금액 =  0;
+    
+    if (예금액 >= 50000){
+      미래예금액 = 예금액 * 1.2 * 1.2
+    }else {
+      미래예금액 = 예금액 * 1.15 * 1.15
+    }
+
+    console.log(미래예금액);
+
+    var first = 240;
+    var second = first * (2/3);
+    var third = second * (2/3);
+
+    var refill = first + second + third;
+    console.log(refill);
+
+    var count = 0;
+
+    document.querySelector('#send-answer').addEventListener('click', function(){
+      count += 1;
+      var 유저답안 = document.querySelector('#answer').value;
+      if (유저답안 == '1335') {
+        alert('성공')
+      } else if (count >= 3 && 유저답안 != '1335'){
+        alert('멍청아')
+      }
+    });
 
   </script>
 
