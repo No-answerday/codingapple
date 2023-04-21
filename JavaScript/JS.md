@@ -197,4 +197,28 @@ ex : 4%3 = 1
 스타일 바꾸려면 class명을 수정하는게 좋음
 
 
-# 230418
+# 230421
+
+## setTimeout
+x초 후에 코드 실행하기  
+setTimeout(function(){실행코드}, ms)  
+
+## setInterval
+x초마다 코드 실행하기  
+setTimeout(function(){실행코드}, ms)
+
+## JS 문법 vs 브라우저 사용법
+
+Javascript 문법 -> var let const if function  
+웹브라우저 사용법 ->   
+document.querySelector()  
+alert()  
+setTimeout()  
+addEventListener()
+
+## 콜백함수 참고
+콜백함수 : 함수 파라미터에 들어가는 함수  
+다른 곳에 만든 함수를 집어넣어도 작동됨
+
+## clearTimour
+타이머 삭제

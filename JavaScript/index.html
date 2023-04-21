@@ -58,6 +58,12 @@
     </div> 
 
     <button id="login">로그인</button>
+
+    <br><br><br>
+
+    <div class="alert alet-danger">
+      5초 이내 구매시 사은품 증정!
+    </div>
     
     <script>
       // $('#login').on('click', function(){
@@ -107,8 +113,11 @@
       });     
 
       //badge 클릭횟수가 홀수번 클릭시 내부 글자를 light로 변경
-      //badge 짝수번 클릭시 내부 글자를 dark로 변경 
-
+      //badge 짝수번 클릭시 내부 글자를 dark로 변경
+      
+      setTimeout(function(){
+        $('.alert').hide();
+      }, 1000)
 
 
     </script>
