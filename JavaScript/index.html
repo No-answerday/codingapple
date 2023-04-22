@@ -62,7 +62,7 @@
     <br><br><br>
 
     <div class="alert alet-danger">
-      5초 이내 구매시 사은품 증정!
+      <span id="num">5</span>초 이내 구매시 사은품 증정!
     </div>
     
     <script>
@@ -96,6 +96,25 @@
         }
       })
 
+      $('form').on('submit',function(e){
+
+        var 입력한값 = document.getElementById('email').value;
+        if ( /\S+@\S+\.\S+/.test(입력한값) ){
+          alert('이메일형식아님')
+          e.preventDefault();
+        }
+
+        });
+
+        $('form').on('submit',function(e){
+
+          var 비번 = document.getElementById('pw').value;
+          if ( /[A-Z]/.test(비번) == false ){
+            alert('대문자없는데요')
+          }
+
+          });  
+
       document.querySelector('.navbar-toggler').addEventListener('click', function(){
         document.querySelectorAll('.list-group')[0].classList.toggle('show');
       })  
@@ -115,10 +134,22 @@
       //badge 클릭횟수가 홀수번 클릭시 내부 글자를 light로 변경
       //badge 짝수번 클릭시 내부 글자를 dark로 변경
       
-      setTimeout(function(){
-        $('.alert').hide();
-      }, 1000)
+      // setTimeout(function(){
+      //   $('.alert').hide();
+      // }, 1000)
 
+      var countDown = 5;
+      
+      setInterval(function(){
+        countDown -= 1;
+        if(countDown >= 0){
+          document.querySelector('#num').innerHTML = countDown;
+        }
+      }, 1000);
+
+      if(countDown = 0){
+        $('.alert').hide();
+      };
 
     </script>
 
