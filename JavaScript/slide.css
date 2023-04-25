@@ -1,0 +1,12 @@
+.slide-container {
+  width: 300vw; /*  100vw==브라우저폭 */
+  transition: all 1s;
+  transform: translateX(0);
+}
+.slide-box  {
+  width: 100vw;
+  float: left;
+}
+.slide-box img  {
+  width: 100% ;
+}
