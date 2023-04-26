@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // return & 소수점 계산
+    function vat(a){
+      var num = (a * 1.1).toFixed(2);
+      return parseFloat(num)
+    }
+
+    console.log(vat(50000))
+
+    // 함수에 분과 초를 차례로 파라미터로 입력하면 ms단위로 바꿔서 뱉어주는 함수
+    // 1초 == 1000ms
+    function convert (min, sec){
+      var result = (((min * 60) + sec)*1000);
+      return result
+    }
+
+    console.log(convert(1, 30));
+    console.log(convert(2, 10));
+
+    // 가격을 파라미터로 입력하면 10% 할인가를 뱉는 함수
+    // 첫 구매여부도 true/false로 둘째파라미터에 입력해서 첫 구매가 맞을 경우 추가로 1.5 달러도 할인
+    function sale(price, firstSell) {
+      var discount = price * 0.9;
+      if (firstSell == true) {
+        discount = discount -1.5;
+      }
+      return parseFloat(discount);
+    }
+
+    console.log(sale(70, false));
+    console.log(sale(10, true));
+
+  </script>
+
+
+</body>
+</html>
