@@ -27,11 +27,27 @@
     <li class="list-group-item">And a fifth one</li>
   </ul>
 
+  <!-- 회원약관  -->
+  <div class="lorem" style="width: 200px; height: 100px; overflow-y: scroll">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptas voluptatum minus praesentium fugit debitis at, laborum ipsa itaque placeat sit, excepturi eius. Nostrum perspiciatis, eligendi quae consectetur praesentium exercitationem.
+  </div> 
+
+  <div style="height: 1000px;"></div>
+
   <script>
 
     document.querySelector('.navbar-toggler').addEventListener('click', function(){
         document.querySelectorAll('.list-group')[0].classList.toggle('show');
-      }) 
+      })
+    
+    //  회원약관을 끝까지 스크롤하면 alert 창 띄우기
+    //  div의 스크롤바 내린 양 + 눈에 보이는 div 높이 == div의 실제 높이
+    document.querySelector('.lorem').addEventListener('scroll', function(){
+      var scrollAll = document.querySelector('.lorem').scrollTop;
+      var scrollNow = document.querySelector('.lorem').scrollHeight;
+      var scrollBoxHeight = document.querySelector('.lorem').clientHeight;
+      
+    })
 
   </script>
 

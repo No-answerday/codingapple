@@ -298,3 +298,17 @@ parseFloat(), parseInt() 사용해서 숫자로 변경해야함
 ## 자바스크립트 + 연산자 특징
 '문자' + 123 => '문자123'  
 '문자' + '문자' => '문자문자'
+
+# 230429
+
+## scroll 이벤트리스너
+window.addEventListener('scroll', function(){}) : 스크롤이 될 때마다 함수 실행  
+window.scrollY : 유저가 얼마나 스크롤바 내렸나  
+window.scrollTo(x,y) : 강제로 스크롤하기  
+window.scrollBy(x,y) : 현재 위치부터 강제로 스크롤하기    
+<!-- $(window).scrollTop() : jQuery, 현재 스크롤바 위치출력 -->
+
+## overflow-y : scroll
+style로서 내용이 길어지면 스크롤바 생성
+
+
